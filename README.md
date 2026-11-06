@@ -1,16 +1,97 @@
-# React + Vite
+# ShopZone – E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+ShopZone is a responsive e-commerce Single Page Application (SPA) built using React and Vite. It allows users to browse products, view product details, manage their shopping cart, log in as a guest, and complete a simulated checkout process.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Home Page:** Attractive landing page with a hero section and Shop Now button.
+- **Product Listing:** Fetches products dynamically from the DummyJSON API.
+- **Product Details:** Displays individual product information.
+- **Shopping Cart:** Add, remove, and manage products and quantities.
+- **Cart Persistence:** Saves cart data using localStorage.
+- **Guest Login:** Allows users to log in as a guest.
+- **Protected Checkout:** Restricts checkout access to logged-in users.
+- **Order Confirmation:** Displays a confirmation message after placing an order.
+- **Contact Page:** Contact form with basic frontend validation and submission feedback.
+- **Responsive Design:** Supports desktop and mobile screens.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- Context API
+- Browser localStorage
+- DummyJSON Products API
 
-## Expanding the Oxlint configuration
+## API Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Product data is fetched from:
+
+https://dummyjson.com/products
+
+## Application Routes
+
+| Route | Description |
+|---|---|
+| `/` | Home Page |
+| `/shop` | Product Listing |
+| `/product/:id` | Product Details |
+| `/cart` | Shopping Cart |
+| `/login` | Guest Login |
+| `/checkout` | Protected Checkout |
+| `/contact` | Contact Page |
+
+## Installation and Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Nisha-Sharma676/shopzone-ecommerce.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd shopzone-ecommerce
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL shown in the terminal.
+
+## Available Scripts
+
+- `npm run dev` – Starts the development server.
+- `npm run build` – Creates the production build.
+- `npm run lint` – Runs code quality checks.
+
+## Live Demo
+
+https://shopzone-ecommerce-one.vercel.app/
+
+## GitHub Repository
+
+https://github.com/Nisha-Sharma676/shopzone-ecommerce
+
+## Note
+
+This project is developed for learning and demonstration purposes. Guest authentication is simulated on the frontend. Checkout does not process real payments, and the contact form does not send actual emails.
+
+## Author
+
+Nisha Sharma
+B.Tech CSE (AI & ML)
